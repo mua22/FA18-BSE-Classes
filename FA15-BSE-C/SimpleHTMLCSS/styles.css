@@ -1,0 +1,50 @@
+div1{
+    border: 2px solid;
+    margin-bottom: 5px;
+}
+
+#topMenu{
+    background-color: #007bff;
+}
+#topMenu li{
+    display: inline;
+    margin-right: 1.5em;
+    font-size: 1.3em;
+}
+
+#topMenu li a{
+    color: white;
+}
+
+.dropdown-content{
+    display: none;
+    width: 200px;
+    position: absolute;
+
+    background-color: #6f42c1;
+}
+.dropdown-content a{
+    display: block;
+    width: 100px;
+}
+.dropdown:hover .dropdown-content{
+    display: inline;
+}
+.dropdown{
+    position: relative;
+}
+
+.right-sidebar{
+    float: right;
+    width: 15%;
+    padding-left: 1.5em;
+}
+.left-sidebar{
+    width: 15%;
+    float: left;
+    padding-right: 1.5em;
+}
+
+#container{
+    overflow: hidden;
+}
