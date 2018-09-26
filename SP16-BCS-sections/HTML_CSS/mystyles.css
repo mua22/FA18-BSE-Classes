@@ -1,0 +1,49 @@
+div1{
+    border: 1px solid;
+    margin: 5px;
+}
+
+#menu{
+    background-color: #6f42c1;
+}
+
+#menu li a{
+    color: white;
+}
+
+#menu li{
+    display: inline;
+    margin-right: 1.5em;
+    font-size: 1.5em;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    width: 200px;
+    position: absolute;
+    background-color: #6f42c1;
+}
+.dropdown-content a{
+    display: block;
+}
+
+.dropdown:hover .dropdown-content{
+    display: inline;
+}
+
+.sidebar-right{
+    float: right;
+    width: 10%;
+
+}
+.sidebar-left{
+    float: left;
+    width: 15%;
+    margin-right: 20px;
+}
+
+#container{
+    overflow: hidden;
+}
