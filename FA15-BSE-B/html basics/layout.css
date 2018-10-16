@@ -1,0 +1,74 @@
+div1{
+    border: 2px solid black;
+    padding: 1em;
+    margin: 1em;
+}
+
+.right{
+    float: right;
+    width: 10%;
+}
+
+#container{
+    overflow: hidden;
+}
+
+.left{
+    float: left;
+    width: 10%;
+}
+
+#menu{
+    text-align: center;
+    background-color: black;
+}
+
+#menu a{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+#menu a:hover{
+    color: red;
+
+}
+#menu li{
+    margin-right: 2em;
+    display: inline;
+}
+
+#verticalMenu a{
+    color: green;
+    font-size: 1.5em;
+    display: block;
+}
+
+.dropdownContent{
+    display: none;
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.dropdownContent a{
+    color: white;
+    display: block;
+    width: 200px;
+}
+
+p{
+    clear:both;
+}
+
+.dropdown:hover .dropdownContent{
+    display: inline;
+}
+
+.dropdown{
+    position: relative;
+}
+
+div{
+    margin: 0.5em;
+}
