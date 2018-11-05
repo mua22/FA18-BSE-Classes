@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php session_start() ;?>
     <meta charset="UTF-8">
     <title>CRUD</title>
     <link rel="stylesheet" href="./bootstrap.css">
@@ -14,5 +15,9 @@
         <li><a href="/add.php" class="main-link">Add New Product</a></li>
 
     </ul>
-
+    <?php if(isset($_SESSION["flash"])){
+        echo $_SESSION["flash"];
+        unset($_SESSION["flash"]);
+    }?>
     <hr>
+
