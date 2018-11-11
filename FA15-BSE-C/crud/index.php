@@ -21,7 +21,7 @@
 
 
         <td>
-            <a href="" class="btn btn-sm btn-info">Edit</a> &nbsp;
+            <a href="edit.php?id=<?=$row['id']?>" class="btn btn-sm btn-info">Edit</a> &nbsp;
             <a href="/delete.php?id=<?= $row['id']?>" class="btn btn-sm btn-danger">Delete</a>
         </td>
     </tr>

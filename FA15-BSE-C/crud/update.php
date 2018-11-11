@@ -7,16 +7,13 @@
  */
 session_start();
 $name = $_REQUEST['name'];
-if(empty($name))
-{
-    return header("Location: add.php?error=occured");
-}
 $description = $_REQUEST['description'];
+$id = $_REQUEST['id'];
 
-$query = "insert into products (name,description) values('$name','$description') ";
-
+$query = "update products set name='$name', description='$description' where id=$id";
+//die($query);
 include "DBConnectivity.php";
 $db = new DBConnectivity();
 $result = $db->query($query);
-$_SESSION["message"] = "Record Added";
-header('Location: index.php');
+$_SESSION["message"] = "Record Updated";
+header("Location: show.php?id=$id");

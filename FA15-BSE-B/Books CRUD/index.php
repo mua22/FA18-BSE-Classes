@@ -4,7 +4,7 @@
     include "./Models/DBWrapper.php";
     $db = new DBWrapper();
 
-    $result = $db->query("select * from books limit 10");
+    $result = $db->query("select * from books order by id  desc limit 10");
 
 
 ?>
@@ -26,11 +26,11 @@
         <?php while($book = $result->fetch_assoc()){?>
             <tr>
                 <td><?= $book['id'];?></td>
-                <td><a href="./show.php"><?= $book['title'];?></a></td>
+                <td><a href="./show.php?id=<?php echo $book['id'];?>"><?= $book['title'];?></a></td>
                 <td><?= $book['year'];?></td>
                 <td>
-                    <a href="./edit.php" class="btn btn-xs btn-info">Edit</a>
-                    <a href="./delete.php" class="btn btn-xs btn-danger">Delete</a>
+                    <a href="./edit.php?id=<?php echo $book['id'];?>" class="btn btn-xs btn-info">Edit</a>
+                    <a href="./delete.php?id=<?php echo $book['id'];?>" class="btn btn-xs btn-danger">Delete</a>
                 </td>
             </tr>
         <?php }?>

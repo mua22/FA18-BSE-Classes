@@ -22,4 +22,5 @@
 
         <input type="submit">
     </form>
+
 <?php include "./partials/bottom.php";?>
