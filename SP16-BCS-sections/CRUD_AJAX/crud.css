@@ -1,0 +1,5 @@
+ul#menu li{
+    display: inline;
+    margin-right: 3px;
+    font-size: 1.5em;
+}

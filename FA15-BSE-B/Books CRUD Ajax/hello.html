@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $.get('./usman.txt',function (res) {
+                    $("#showAjaxResult").html(res)
+                })
+            });
+        });
+    </script>
+</head>
+<body>
+<button>
+    Click EM
+</button>
+<span id="showAjaxResult"></span>
+</body>
+</html>
