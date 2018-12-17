@@ -2,9 +2,11 @@
 
 ## React Installation Instructions
 ### Fresh Installation
-Install Node
-from command prompt run 
-npm install -g create-react-app (Only Once)
+'Install Node'
+
+'from command prompt run' 
+
+'npm install -g create-react-app' (Only Once)
 create-react-app react-app
 cd react-app
 npm start
