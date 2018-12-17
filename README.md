@@ -6,16 +6,19 @@
 
 `from command prompt run` 
 
-'npm install -g create-react-app' (Only Once)
-create-react-app react-app
-cd react-app
-npm start
+`npm install -g create-react-app` (Only Once)
+
+`create-react-app react-app`
+
+`cd react-app`
+
+`npm start'
 
 ### git code installation 
-download or clone 
-in command prompt go to that folder 
-npm install 
-npm start 
+download or clone then in command prompt go to that folder 
+
+`npm install`
+`npm start` 
 
 ## Laravel Installation
 ## Fresh install 
@@ -39,16 +42,21 @@ Enter your PHP directory at the end, including ';' before (e.g. ;C:\php)
 
 Press OK
 
-Install composer 
-run from command prompt
-composer create-project --prefer-dist laravel/laravel blog
-cd blog 
-php -S localhost:8000 -t=public 
+Install composer then run from command prompt
+
+`composer create-project --prefer-dist laravel/laravel blog`
+
+`cd blog`
+
+`php -S localhost:8000 -t=public`
+
 then access from chrome at localhost:8000
 ### git code installation 
-download or clone 
-in command prompt go to that folder 
-composer update 
-php -S localhost:8000 -t=public 
+download or clone then in command prompt go to that folder 
+
+`composer update` 
+
+`php -S localhost:8000 -t=public`
+ 
 then access from chrome at localhost:8000
 
