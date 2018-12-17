@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Product from './Product'
+import Products from './components/Products/Products';
+import { Provider } from "react-redux";
 class App extends Component {
   state = {
     price:500,
@@ -11,8 +12,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h3>Products</h3>
-        <Product title="COMASATS" price="90 USD"/>
+        <h3>Products Store Example</h3>
+        <Provider store={window.store}>  
+        <Products />
+
+        </Provider>
+
+        
       </div>
     );
   }

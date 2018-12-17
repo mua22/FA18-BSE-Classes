@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Product from "./Product";
+import Products from "./Products/Products";
+import Cart from "./Cart/Cart";
+
 class App extends Component {
   state = {
+    cartProducts: [{ title: "BMW", price: 200 }, { title: "Audi", price: 300 }],
     products: [
       {
         title: "BMW",
@@ -19,28 +21,35 @@ class App extends Component {
         title: "ALTO",
         price: 0,
         details: "Hello ALTO"
-      },
+      }
     ],
     title: "We are selling cars and bikes",
     price: 4000
   };
   render() {
     return (
-      <div className="App">
-      <Product  
-        title="Usman" price={900}
-         details="Hello" 
-         showDetails = {false}
-        />
-        {this.state.products.map((product,index)=>
-        <Product key={index} 
-        title={product.title} price={product.price}
-         details={product.details} 
-         showDetails = {true}
-        />
-        )}
+      <div className="App container">
+        <h1>This is our store</h1>
+        <div className="row">
+          <div className="col-sm-6">
+            <Products products={this.state.products} 
+            onProductAddToCart = {this.onProductAddToCart}
+            />
+          </div>
+          <div className="col-sm-6">
+            <Cart products={this.state.cartProducts}/>
+          </div>
+        </div>
       </div>
     );
+  }
+  onProductAddToCart = (title,price) => {
+    const cs = Array.from(this.state.cartProducts);
+    cs.push({
+      title:title,
+      price:price
+    });
+    this.setState ({cartProducts:cs});
   }
 }
 

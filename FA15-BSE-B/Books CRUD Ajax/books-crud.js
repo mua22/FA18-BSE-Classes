@@ -35,6 +35,11 @@ function btnShowClicked(ev) {
        $('#result-'+id).html(result);
 
     });
+    $.get("jsonresponse.php",function (result) {
+        res = JSON.parse(result);
+       console.log(res.name);
+
+    });
     
     console.log('Ajax Completed');
 }
